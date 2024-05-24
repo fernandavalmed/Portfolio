@@ -1,0 +1,552 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 5px;
+  background-color: black;
+  border-bottom: 2px solid #7EF2CB;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-toggler-icon{
+  background-image: url(imagenes/hamburguesa.png);
+}
+
+.icon{
+  font-size: 2.5rem;
+  background-color: #FCB9B0;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-brand img{
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.navbar-nav a{
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.navbar-nav a:hover{
+  text-decoration: underline;
+  color: #7EF2CB;
+}
+
+
+/* Seccion Hero */
+
+#heroSection{
+  height: 640px;
+  background-color: #E5D3C0;
+}
+
+#heroSection img{
+  padding: 50px;
+  border-radius: 50%;
+}
+
+.hero {
+  min-height: 450px;
+  margin-left: 5px;
+  padding: 0;
+  background-color: #E5D3C0;
+}
+
+.hero-principal {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+}
+
+#typewriter {
+  font-family: "Montserrat", sans-serif;
+  color: #8A593B !important;
+  display: flex;
+  justify-content: left;
+}
+
+.hero-principal h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 450px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.sobre-mi h2{
+  font-family: "Playfair Display", serif;;
+}
+
+.sobre-mi p{
+  font-family: "Montserrat", sans-serif;
+}
+
+.seccion-oscura {
+  color: black;
+  background-color: #7EF2CB;
+}
+
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #FC7E65;
+}
+
+.text-bg-primary{
+  background-color: #7EF2CB !important;
+  color: black !important;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: black;
+  background-color: #FCB9B0;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia p{
+  font-family: "Montserrat", sans-serif;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Proyectos */
+
+#proyectos h2{
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.seccion-descripcion{
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+  z-index: 1;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.btn{
+  background-color: #7EF2CB;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+#proyectos{
+  margin-bottom: 100px;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #E5D3C0;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 1px #FC7E65;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .seccion-titulo{
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.contacto .descripcion {
+  color: #66432d;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacto button {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FC7E65;
+  border: none;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 200px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #FC7E65;
+  border: 2px solid white;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: white;
+}
+
+.derechos-de-autor {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 20px;
+}
+
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .hero-principal h2{
+    font-size: 20px;
+  }
+
+  .hero{
+    min-height: 0px;
+  }
+
+  #heroSection{
+    height: 500px;
+  }
+
+  #div1{
+    height: 300px;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .hero-principal {
+    padding-top: 0px;
+    
+  }
+
+  .sobre-mi h2{
+    font-size: x-large;
+  }
+  
+  .sobre-mi p{
+    font-size: medium;
+  }
+  
+}
+
+@media screen and (min-width: 767px) {
+  .navbar {
+    height: 42px;
+  }
+
+  #heroSection img{
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 600px;
+  }
+  .hero {
+    margin-top: 15%;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+
+
+
+
+
+/* Sección comentada */
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
